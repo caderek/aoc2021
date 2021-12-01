@@ -19,6 +19,7 @@
     "@types/ramda": "^0.27.57",
     "aocrunner": "^1.4.4",
     "aoctimer": "^2.0.0",
+    "gramma": "^1.6.0",
     "prettier": "^2.4.1"
   },
   "dependencies": {
