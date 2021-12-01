@@ -14,17 +14,14 @@ const part1 = (rawInput) => {
 };
 const part2 = (rawInput) => {
   const input = parseInput(rawInput);
-  const threes = [];
-  for (let i = 0; i < input.length; i++) {
-    threes.push(input[i] + (input[i + 1] || 0) + (input[i + 2] || 0));
-  }
   let prev = -Infinity;
   let count = 0;
-  for (const item of threes) {
-    if (item > prev) {
+  for (let i = 0; i < input.length; i++) {
+    const three = input[i] + (input[i + 1] || 0) + (input[i + 2] || 0);
+    if (three > prev) {
       count++;
     }
-    prev = item;
+    prev = three;
   }
   return count - 1;
 };
