@@ -1,4 +1,24 @@
 import run from "aocrunner"
+import {
+  A,
+  pipe,
+  compose,
+  rail,
+  curry,
+  multi,
+  method,
+  dispatch,
+  math,
+  R,
+  graph,
+  log,
+  delay,
+  equal,
+  grid,
+  numSys,
+  gen,
+  crypto,
+} from "../utils/index.js"
 
 const parseInput = (rawInput: string) => rawInput
 

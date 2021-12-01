@@ -1,31 +1,42 @@
-/**
- * Root for your util libraries.
- *
- * You can import them in the src/template/index.ts,
- * or in the specific file.
- *
- * Note that this repo uses ES Modules, so you have to explicitly specify
- * .js extension (yes, .js not .ts - even for TypeScript files)
- * for imports that are not imported from node_modules.
- *
- * For example:
- *
- *   correct:
- *
- *     import _ from 'lodash'
- *     import myLib from '../utils/myLib.js'
- *     import { myUtil } from '../utils/index.js'
- *
- *   incorrect:
- *
- *     import _ from 'lodash'
- *     import myLib from '../utils/myLib.ts'
- *     import { myUtil } from '../utils/index.ts'
- *
- *   also incorrect:
- *
- *     import _ from 'lodash'
- *     import myLib from '../utils/myLib'
- *     import { myUtil } from '../utils'
- *
- */
+import "./monkey.js"
+import A from "@arrows/array"
+import { multi, method } from "@arrows/multimethod"
+import { pipe, compose, rail, curry } from "@arrows/composition"
+import dispatch from "@arrows/dispatch"
+import * as math from "mathjs"
+import * as R from "ramda"
+import * as graph from "graphlib"
+import { isDeepStrictEqual } from "util"
+// @ts-ignore
+import * as gen from "generatorics"
+
+import crypto from "./crypto.js"
+import grid from "./grid.js"
+import numSys from "./num-sys.js"
+
+const log = (data: any) => console.dir(data, { colors: true, depth: 99 })
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
+const equal = curry(isDeepStrictEqual)
+
+const day = process.argv[2]
+
+export {
+  A,
+  pipe,
+  compose,
+  rail,
+  curry,
+  multi,
+  method,
+  dispatch,
+  math,
+  R,
+  graph,
+  log,
+  delay,
+  equal,
+  grid,
+  numSys,
+  gen,
+  crypto,
+}

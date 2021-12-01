@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/template/index.ts"],
+  "sourcesContent": ["import run from \"aocrunner\"\nimport {\n  A,\n  pipe,\n  compose,\n  rail,\n  curry,\n  multi,\n  method,\n  dispatch,\n  math,\n  R,\n  graph,\n  log,\n  delay,\n  equal,\n  grid,\n  numSys,\n  gen,\n  crypto,\n} from \"../utils/index.js\"\n\nconst parseInput = (rawInput: string) => rawInput\n\nconst part1 = (rawInput: string) => {\n  const input = parseInput(rawInput)\n\n  return\n}\n\nconst part2 = (rawInput: string) => {\n  const input = parseInput(rawInput)\n\n  return\n}\n\nrun({\n  part1: {\n    tests: [\n      // { input: ``, expected: \"\" },\n    ],\n    solution: part1,\n  },\n  part2: {\n    tests: [\n      // { input: ``, expected: \"\" },\n    ],\n    solution: part2,\n  },\n  trimTestInputs: true,\n})\n"],
+  "mappings": "AAAA;AAsBA,MAAM,aAAa,CAAC,aAAqB;AAEzC,MAAM,QAAQ,CAAC,aAAqB;AAClC,QAAM,QAAQ,WAAW;AAEzB;AAAA;AAGF,MAAM,QAAQ,CAAC,aAAqB;AAClC,QAAM,QAAQ,WAAW;AAEzB;AAAA;AAGF,IAAI;AAAA,EACF,OAAO;AAAA,IACL,OAAO;AAAA,IAGP,UAAU;AAAA;AAAA,EAEZ,OAAO;AAAA,IACL,OAAO;AAAA,IAGP,UAAU;AAAA;AAAA,EAEZ,gBAAgB;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/utils/monkey.ts"],
+  "sourcesContent": ["interface Array<T> {\n  chain<T>(fn: (arg: T) => any): any\n  tap<T>(fn: (arg: T) => any): T\n}\n\nObject.defineProperty(Array.prototype, \"chain\", {\n  value: function (fn) {\n    return fn(this)\n  },\n})\n\nObject.defineProperty(Array.prototype, \"tap\", {\n  value: function (fn) {\n    fn(this)\n    return this\n  },\n})\n\ninterface String {\n  chain<T>(fn: (arg: T) => any): any\n  tap<T>(fn: (arg: T) => any): T\n}\n\nObject.defineProperty(String.prototype, \"chain\", {\n  value: function (fn) {\n    return fn(this)\n  },\n})\n\nObject.defineProperty(String.prototype, \"tap\", {\n  value: function (fn) {\n    fn(this)\n    return this\n  },\n})\n"],
+  "mappings": "AAKA,OAAO,eAAe,MAAM,WAAW,SAAS;AAAA,EAC9C,OAAO,SAAU,IAAI;AACnB,WAAO,GAAG;AAAA;AAAA;AAId,OAAO,eAAe,MAAM,WAAW,OAAO;AAAA,EAC5C,OAAO,SAAU,IAAI;AACnB,OAAG;AACH,WAAO;AAAA;AAAA;AASX,OAAO,eAAe,OAAO,WAAW,SAAS;AAAA,EAC/C,OAAO,SAAU,IAAI;AACnB,WAAO,GAAG;AAAA;AAAA;AAId,OAAO,eAAe,OAAO,WAAW,OAAO;AAAA,EAC7C,OAAO,SAAU,IAAI;AACnB,OAAG;AACH,WAAO;AAAA;AAAA;",
+  "names": []
+}
