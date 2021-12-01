@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/utils/index.ts"],
-  "sourcesContent": ["import \"./monkey.js\"\nimport A from \"@arrows/array\"\nimport { multi, method } from \"@arrows/multimethod\"\nimport { pipe, compose, rail, curry } from \"@arrows/composition\"\nimport dispatch from \"@arrows/dispatch\"\nimport * as math from \"mathjs\"\nimport * as R from \"ramda\"\nimport * as graph from \"graphlib\"\nimport { isDeepStrictEqual } from \"util\"\n// @ts-ignore\nimport * as gen from \"generatorics\"\n\nimport crypto from \"./crypto.js\"\nimport grid from \"./grid.js\"\nimport numSys from \"./num-sys.js\"\n\nconst log = (data: any) => console.dir(data, { colors: true, depth: 99 })\nconst delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))\nconst equal = curry(isDeepStrictEqual)\n\nconst day = process.argv[2]\n\nexport {\n  A,\n  pipe,\n  compose,\n  rail,\n  curry,\n  multi,\n  method,\n  dispatch,\n  math,\n  R,\n  graph,\n  log,\n  delay,\n  equal,\n  grid,\n  numSys,\n  gen,\n  crypto,\n}\n"],
-  "mappings": "AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AAEA;AAEA;AACA;AACA;AAEA,MAAM,MAAM,CAAC,SAAc,QAAQ,IAAI,MAAM,EAAE,QAAQ,MAAM,OAAO;AACpE,MAAM,QAAQ,CAAC,OAAe,IAAI,QAAQ,CAAC,YAAY,WAAW,SAAS;AAC3E,MAAM,QAAQ,MAAM;AAEpB,MAAM,MAAM,QAAQ,KAAK;",
-  "names": []
-}
