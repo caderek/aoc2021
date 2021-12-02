@@ -1,24 +1,4 @@
 import run from "aocrunner"
-import {
-  A,
-  pipe,
-  compose,
-  rail,
-  curry,
-  multi,
-  method,
-  dispatch,
-  math,
-  R,
-  graph,
-  log,
-  delay,
-  equal,
-  grid,
-  numSys,
-  gen,
-  crypto,
-} from "../utils/index.js"
 
 const parseInput = (rawInput: string) =>
   rawInput.split("\n").map((x) => x.split(" "))
@@ -30,12 +10,14 @@ const part1 = (rawInput: string) => {
   let horizontal = 0
 
   for (const [dir, amount] of input) {
+    const x = Number(amount)
+
     if (dir === "forward") {
-      horizontal += Number(amount)
+      horizontal += x
     } else if (dir === "up") {
-      depth = Math.max(depth - Number(amount), 0)
+      depth = Math.max(depth - x, 0)
     } else {
-      depth += Number(amount)
+      depth += x
     }
   }
 
@@ -50,13 +32,15 @@ const part2 = (rawInput: string) => {
   let horizontal = 0
 
   for (const [dir, amount] of input) {
+    const x = Number(amount)
+
     if (dir === "forward") {
-      horizontal += Number(amount)
-      depth += aim * Number(amount)
+      horizontal += x
+      depth += aim * x
     } else if (dir === "up") {
-      aim -= Number(amount)
+      aim -= x
     } else {
-      aim += Number(amount)
+      aim += x
     }
   }
 
@@ -67,12 +51,14 @@ run({
   part1: {
     tests: [
       {
-        input: `forward 5
-down 5
-forward 8
-up 3
-down 8
-forward 2`,
+        input: `
+          forward 5
+          down 5
+          forward 8
+          up 3
+          down 8
+          forward 2
+        `,
         expected: 150,
       },
     ],
@@ -81,12 +67,14 @@ forward 2`,
   part2: {
     tests: [
       {
-        input: `forward 5
-down 5
-forward 8
-up 3
-down 8
-forward 2`,
+        input: `
+          forward 5
+          down 5
+          forward 8
+          up 3
+          down 8
+          forward 2
+        `,
         expected: 900,
       },
     ],
