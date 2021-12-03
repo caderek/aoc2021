@@ -1,26 +1,14 @@
 const create = (w?: number, h?: number, fill: any = null) => {
-  const grid = Array.from({ length: h }, () =>
-    Array.from({ length: w }, () => fill),
-  )
-
-  return Object.assign(grid, {
-    width: w,
-    height: h,
-  })
+  return new Array(h).fill(null).map(() => new Array(w).fill(fill))
 }
 
 type Grid = any[][]
 type Mapper = (definition: string) => Grid
 
 const from = (definition: string, mapper?: Mapper) => {
-  const grid = mapper
+  return mapper
     ? mapper(definition)
     : definition.split("\n").map((line) => line.split(""))
-
-  return Object.assign(grid, {
-    height: grid.length,
-    width: grid[0].length,
-  })
 }
 
 const neighborsWithDiagonals = (x: number, y: number, grid: Grid) => {
@@ -51,3 +39,5 @@ export default {
   neighbors,
   neighborsWithDiagonals,
 }
+
+const grid = create(5, 5, 0)
