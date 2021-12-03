@@ -1,0 +1,37 @@
+
+    +--- AoC 2021 - AOC TIMER ---------------------------+
+    |                                                    |
+    | Linux (x64) 8GB RAM                                |
+    | Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz          |
+    |                                                    |
+    | Language: TypeScript                               |
+    |                                                    |
+    |--- DAYS -------------------------------------------|
+    |                                                    |
+    | Day 01                                             |
+    | ------                                             |
+    | Time: 1.26ms                    Points: 1024       |
+    | Benchmark: 0.026%               Level: ★★★★★★★★★★  |
+    |                                                    |
+    | Day 02                                             |
+    | ------                                             |
+    | Time: 2.12ms                    Points: 1024       |
+    | Benchmark: 0.044%               Level: ★★★★★★★★★★  |
+    |                                                    |
+    | Day 03                                             |
+    | ------                                             |
+    | Time: 5.95ms                    Points: 512        |
+    | Benchmark: 0.124%               Level: ★★★★★★★★★☆  |
+    |                                                    |
+    |--- SUMMARY ----------------------------------------|
+    |                                                    |
+    | Completed: 3 / 25                                  |
+    |                                                    |
+    | Total time: 9.33ms                                 |
+    | Benchmark (average): 0.065%                        |
+    |                                                    |
+    | Total score: 2560                                  |
+    | Level (average): ★★★★★★★★★★                        |
+    |                                                    |
+    +----------------------------------- git.io/JL9Qu ---+
+

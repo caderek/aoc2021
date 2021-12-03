@@ -18,7 +18,7 @@
     "@types/node": "^16.11.6",
     "@types/ramda": "^0.27.57",
     "aocrunner": "^1.4.11",
-    "aoctimer": "^2.0.0",
+    "aoctimer": "^3.0.2",
     "gramma": "^1.6.0",
     "prettier": "^2.4.1"
   },

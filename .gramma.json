@@ -2,7 +2,8 @@
   "api_url": "https://api.languagetool.org/v2/check",
   "api_key": "",
   "dictionary": [
-    "Utils"
+    "Utils",
+    "aoctimer"
   ],
   "language": "en-US",
   "rules": {

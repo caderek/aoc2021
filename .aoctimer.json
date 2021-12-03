@@ -1,0 +1,30 @@
+{
+  "version": "3.0.2",
+  "year": "2021",
+  "language": "TypeScript",
+  "system": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz|x64|Linux|8GB",
+  "benchmark": 4802460304,
+  "days": [
+    {
+      "day": "01",
+      "level": 10,
+      "score": 1024,
+      "time": 1.26,
+      "rel": 0.026
+    },
+    {
+      "day": "02",
+      "level": 10,
+      "score": 1024,
+      "time": 2.12,
+      "rel": 0.044
+    },
+    {
+      "day": "03",
+      "level": 9,
+      "score": 512,
+      "time": 5.95,
+      "rel": 0.124
+    }
+  ]
+}
