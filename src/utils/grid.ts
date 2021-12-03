@@ -33,11 +33,14 @@ const neighbors = (x: number, y: number, grid: Grid) => {
   ].filter((n) => n !== undefined)
 }
 
+const height = (grid: Grid) => grid.length
+const width = (grid: Grid) => grid[0].length
+
 export default {
   create,
   from,
   neighbors,
   neighborsWithDiagonals,
+  width,
+  height,
 }
-
-const grid = create(5, 5, 0)
