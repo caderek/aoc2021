@@ -10,33 +10,33 @@
     |                                                    |
     | Day 01                                             |
     | ------                                             |
-    | Time: 1.26ms                    Points: 1024       |
-    | Benchmark: 0.026%               Level: ★★★★★★★★★★  |
+    | Time: 1.31ms                    Points: 1024       |
+    | Benchmark: 0.027%               Level: **********  |
     |                                                    |
     | Day 02                                             |
     | ------                                             |
-    | Time: 2.12ms                    Points: 1024       |
-    | Benchmark: 0.044%               Level: ★★★★★★★★★★  |
+    | Time: 2.19ms                    Points: 1024       |
+    | Benchmark: 0.046%               Level: **********  |
     |                                                    |
     | Day 03                                             |
     | ------                                             |
-    | Time: 5.95ms                    Points: 512        |
-    | Benchmark: 0.124%               Level: ★★★★★★★★★☆  |
+    | Time: 5.97ms                    Points: 512        |
+    | Benchmark: 0.124%               Level: *********-  |
     |                                                    |
     | Day 04                                             |
     | ------                                             |
-    | Time: 19.7ms                    Points: 256        |
-    | Benchmark: 0.41%                Level: ★★★★★★★★☆☆  |
+    | Time: 19.38ms                   Points: 256        |
+    | Benchmark: 0.404%               Level: ********--  |
     |                                                    |
     |--- SUMMARY ----------------------------------------|
     |                                                    |
     | Completed: 4 / 25                                  |
     |                                                    |
-    | Total time: 29.03ms                                |
-    | Benchmark (average): 0.151%                        |
+    | Total time: 28.85ms                                |
+    | Benchmark (average): 0.150%                        |
     |                                                    |
     | Total score: 2816                                  |
-    | Level (average): ★★★★★★★★★☆                        |
+    | Level (average): *********-                        |
     |                                                    |
     +----------------------------------- git.io/JL9Qu ---+
 
