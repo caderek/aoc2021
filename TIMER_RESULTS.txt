@@ -23,15 +23,20 @@
     | Time: 5.95ms                    Points: 512        |
     | Benchmark: 0.124%               Level: ★★★★★★★★★☆  |
     |                                                    |
+    | Day 04                                             |
+    | ------                                             |
+    | Time: 19.7ms                    Points: 256        |
+    | Benchmark: 0.41%                Level: ★★★★★★★★☆☆  |
+    |                                                    |
     |--- SUMMARY ----------------------------------------|
     |                                                    |
-    | Completed: 3 / 25                                  |
+    | Completed: 4 / 25                                  |
     |                                                    |
-    | Total time: 9.33ms                                 |
-    | Benchmark (average): 0.065%                        |
+    | Total time: 29.03ms                                |
+    | Benchmark (average): 0.151%                        |
     |                                                    |
-    | Total score: 2560                                  |
-    | Level (average): ★★★★★★★★★★                        |
+    | Total score: 2816                                  |
+    | Level (average): ★★★★★★★★★☆                        |
     |                                                    |
     +----------------------------------- git.io/JL9Qu ---+
 
