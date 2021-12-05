@@ -1,5 +1,5 @@
 import run from "aocrunner"
-import { map } from "mathjs"
+import { Flat2 } from "../utils/flat.js"
 
 type Coords = [[number, number], [number, number]]
 
@@ -18,7 +18,7 @@ const solve = (rawInput: string, filterFn?: (item: Coords) => boolean) => {
   }
 
   const size = Math.max(...input.flat(2)) + 1
-  const grid = new Int8Array(size ** 2)
+  const grid = new Flat2(size, size, Int8Array)
 
   input.forEach(([[fromX, fromY], [toX, toY]]) => {
     const deltaY = fromY === toY ? 0 : fromY > toY ? -1 : 1
@@ -30,11 +30,11 @@ const solve = (rawInput: string, filterFn?: (item: Coords) => boolean) => {
       (fromX > toX ? x >= toX : x <= toX);
       y += deltaY, x += deltaX
     ) {
-      grid[y * size + x]++
+      grid.set(x, y, grid.get(x, y) + 1)
     }
   })
 
-  return grid.filter((x) => x > 1).length
+  return grid.data.filter((x) => x > 1).length
 }
 
 const part1 = (rawInput: string) => {
@@ -81,4 +81,5 @@ run({
     solution: part2,
   },
   trimTestInputs: true,
+  // onlyTests: true,
 })
