@@ -1,4 +1,5 @@
 import run from "aocrunner"
+import { map } from "mathjs"
 
 type Coords = [[number, number], [number, number]]
 
@@ -16,32 +17,24 @@ const solve = (rawInput: string, filterFn?: (item: Coords) => boolean) => {
     input = input.filter(filterFn)
   }
 
-  const grid: number[][] = []
+  const grid: Map<string, number> = new Map()
 
   input.forEach(([[fromX, fromY], [toX, toY]]) => {
     const deltaY = fromY === toY ? 0 : fromY > toY ? -1 : 1
     const deltaX = fromX === toX ? 0 : fromX > toX ? -1 : 1
 
-    const condY =
-      fromY > toY ? (y: number) => y >= toY : (y: number) => y <= toY
-
-    const condX =
-      fromX > toX ? (x: number) => x >= toX : (x: number) => x <= toX
-
     for (
       let y = fromY, x = fromX;
-      condY(y) && condX(x);
+      (fromY > toY ? y >= toY : y <= toY) &&
+      (fromX > toX ? x >= toX : x <= toX);
       y += deltaY, x += deltaX
     ) {
-      if (!grid[y]) {
-        grid[y] = []
-      }
-
-      grid[y][x] = grid[y][x] ? grid[y][x] + 1 : 1
+      const key = `${x}:${y}`
+      grid.set(key, (grid.get(key) ?? 0) + 1)
     }
   })
 
-  return grid.flat().filter((x) => x > 1).length
+  return [...grid.values()].filter((x) => x > 1).length
 }
 
 const part1 = (rawInput: string) => {
