@@ -30,15 +30,15 @@
     |                                                    |
     | Day 05                                             |
     | ------                                             |
-    | Time: 158.08ms                  Points: 32         |
-    | Benchmark: 3.292%               Level: *****-----  |
+    | Time: 166.02ms                  Points: 32         |
+    | Benchmark: 3.457%               Level: *****-----  |
     |                                                    |
     |--- SUMMARY ----------------------------------------|
     |                                                    |
     | Completed: 5 / 25                                  |
     |                                                    |
-    | Total time: 186.93ms                               |
-    | Benchmark (average): 0.779%                        |
+    | Total time: 194.87ms                               |
+    | Benchmark (average): 0.812%                        |
     |                                                    |
     | Total score: 2848                                  |
     | Level (average): ********--                        |
