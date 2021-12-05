@@ -28,15 +28,20 @@
     | Time: 19.38ms                   Points: 256        |
     | Benchmark: 0.404%               Level: ********--  |
     |                                                    |
+    | Day 05                                             |
+    | ------                                             |
+    | Time: 158.08ms                  Points: 32         |
+    | Benchmark: 3.292%               Level: *****-----  |
+    |                                                    |
     |--- SUMMARY ----------------------------------------|
     |                                                    |
-    | Completed: 4 / 25                                  |
+    | Completed: 5 / 25                                  |
     |                                                    |
-    | Total time: 28.85ms                                |
-    | Benchmark (average): 0.150%                        |
+    | Total time: 186.93ms                               |
+    | Benchmark (average): 0.779%                        |
     |                                                    |
-    | Total score: 2816                                  |
-    | Level (average): *********-                        |
+    | Total score: 2848                                  |
+    | Level (average): ********--                        |
     |                                                    |
     +----------------------------------- git.io/JL9Qu ---+
 
