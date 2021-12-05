@@ -17,7 +17,8 @@ const solve = (rawInput: string, filterFn?: (item: Coords) => boolean) => {
     input = input.filter(filterFn)
   }
 
-  const grid: Map<string, number> = new Map()
+  const size = Math.max(...input.flat(2)) + 1
+  const grid = new Int8Array(size ** 2)
 
   input.forEach(([[fromX, fromY], [toX, toY]]) => {
     const deltaY = fromY === toY ? 0 : fromY > toY ? -1 : 1
@@ -29,12 +30,11 @@ const solve = (rawInput: string, filterFn?: (item: Coords) => boolean) => {
       (fromX > toX ? x >= toX : x <= toX);
       y += deltaY, x += deltaX
     ) {
-      const key = `${x}:${y}`
-      grid.set(key, (grid.get(key) ?? 0) + 1)
+      grid[y * size + x]++
     }
   })
 
-  return [...grid.values()].filter((x) => x > 1).length
+  return grid.filter((x) => x > 1).length
 }
 
 const part1 = (rawInput: string) => {
