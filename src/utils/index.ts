@@ -13,6 +13,7 @@ import * as gen from "generatorics"
 import crypto from "./crypto.js"
 import grid from "./grid.js"
 import numSys from "./num-sys.js"
+import mod from "./mod.js"
 
 const log = (data: any) => console.dir(data, { colors: true, depth: 99 })
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -39,4 +40,5 @@ export {
   numSys,
   gen,
   crypto,
+  mod,
 }

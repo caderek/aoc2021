@@ -3,11 +3,6 @@ import mem from "mem"
 
 const parseInput = (rawInput: string) => rawInput.split(",").map(Number)
 
-const mod = (a: number, b: number) => {
-  const x = a % b
-  return x < 0 ? x + b : x
-}
-
 const solve = (days: number) => (rawInput: string) => {
   const input = parseInput(rawInput)
   const unique = [...new Set(input)]
