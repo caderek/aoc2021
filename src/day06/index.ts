@@ -50,12 +50,12 @@ run({
     solution: solve(80),
   },
   part2: {
-    // tests: [
-    //   {
-    //     input: `3,4,3,1,2`,
-    //     expected: 26984457539,
-    //   },
-    // ],
+    tests: [
+      {
+        input: `3,4,3,1,2`,
+        expected: 26984457539,
+      },
+    ],
     solution: solve(256),
   },
   trimTestInputs: true,
