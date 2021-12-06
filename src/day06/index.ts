@@ -1,37 +1,27 @@
 import run from "aocrunner"
-import mem from "mem"
 
 const parseInput = (rawInput: string) => rawInput.split(",").map(Number)
 
 const solve = (days: number) => (rawInput: string) => {
   const input = parseInput(rawInput)
-  const unique = [...new Set(input)]
+  const fish = new Array(9).fill(0)
 
-  const startCounts = unique.map((x) => [
-    x,
-    input.filter((v) => v === x).length,
-  ])
+  input.forEach((x) => fish[x]++)
 
-  const recur = (fish: number, days: number) => {
-    let counter = 1
-
-    days = days - fish
-
-    while (days > 0) {
-      counter += recur(6, days - 3)
-      days -= 7
-    }
-
-    return counter
+  for (let i = 0; i < days; i++) {
+    const temp = fish[0]
+    fish[0] = fish[1]
+    fish[1] = fish[2]
+    fish[2] = fish[3]
+    fish[3] = fish[4]
+    fish[4] = fish[5]
+    fish[5] = fish[6]
+    fish[6] = fish[7] + temp
+    fish[7] = fish[8]
+    fish[8] = temp
   }
 
-  const count = mem(recur, {
-    cacheKey: (arguments_) => arguments_.join(","),
-  })
-
-  return startCounts
-    .map(([fish, num]) => count(fish, days) * num)
-    .reduce((a, b) => a + b)
+  return fish.reduce((a, b) => a + b)
 }
 
 run({
