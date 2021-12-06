@@ -30,6 +30,7 @@
     "generatorics": "^1.1.0",
     "graphlib": "^2.1.8",
     "mathjs": "^10.0.0",
+    "mem": "^9.0.1",
     "ramda": "^0.27.1"
   },
   "engines": {
