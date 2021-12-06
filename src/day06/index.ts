@@ -18,16 +18,16 @@ const solve = (days: number) => (rawInput: string) => {
   ])
 
   const recur = (fish: number, days: number) => {
-    let fishes = 1
+    let counter = 1
 
     days = days - fish
 
     while (days > 0) {
-      fishes += recur(6, days - 3)
+      counter += recur(6, days - 3)
       days -= 7
     }
 
-    return fishes
+    return counter
   }
 
   const count = mem(recur, {
