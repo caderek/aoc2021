@@ -3,6 +3,7 @@
   "api_key": "",
   "dictionary": [
     "Utils",
+    "aocrunner",
     "aoctimer"
   ],
   "language": "en-US",
