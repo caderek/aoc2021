@@ -104,9 +104,9 @@ Both parts: 58.24ms
 
 ```
 Day 06
-Time part 1: 0.61ms
-Time part 2: 223588.73ms
-Both parts: 223589.34ms
+Time part 1: 0.091ms
+Time part 2: 0.569ms
+Both parts: 0.66ms
 ```
 
 ```
