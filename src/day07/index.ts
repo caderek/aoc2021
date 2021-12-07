@@ -11,7 +11,7 @@ const part1 = (rawInput: string) => {
   const n = input.length
 
   const median =
-    n % 2 != 0
+    n % 2 !== 0
       ? input[n / 2]
       : (input[Math.floor((n - 1) / 2)] + input[n / 2]) / 2
 
