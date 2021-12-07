@@ -19,7 +19,7 @@ const part1 = (rawInput: string) => {
 }
 
 const part2 = (rawInput: string) => {
-  const input = parseInput(rawInput).sort((a, b) => a - b)
+  const input = parseInput(rawInput)
 
   const min = Math.min(...input)
   const max = Math.max(...input)
@@ -39,6 +39,8 @@ const part2 = (rawInput: string) => {
 
   return Math.min(...fuelUsage)
 }
+
+// 92881128
 
 run({
   part1: {
