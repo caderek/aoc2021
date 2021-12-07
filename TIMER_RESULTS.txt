@@ -40,17 +40,17 @@
     |                                                    |
     | Day 07                                             |
     | ------                                             |
-    | Time: 62.482ms                  Points: 64         |
-    | Benchmark: 1.301%               Level: ******----  |
+    | Time: 29.169ms                  Points: 128        |
+    | Benchmark: 0.607%               Level: *******---  |
     |                                                    |
     |--- SUMMARY ----------------------------------------|
     |                                                    |
     | Completed: 7 / 25                                  |
     |                                                    |
-    | Total time: 128.649ms                              |
-    | Benchmark (average): 0.383%                        |
+    | Total time: 95.336ms                               |
+    | Benchmark (average): 0.284%                        |
     |                                                    |
-    | Total score: 4032                                  |
+    | Total score: 4096                                  |
     | Level (average): *********-                        |
     |                                                    |
     +----------------------------------- git.io/JL9Qu ---+
