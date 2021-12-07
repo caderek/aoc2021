@@ -21,8 +21,8 @@ const part1 = (rawInput: string) => {
 const part2 = (rawInput: string) => {
   const input = parseInput(rawInput)
 
-  const min = Math.min(...input)
-  const max = Math.max(...input)
+  const min = input[0]
+  const max = input[input.length - 1]
 
   const fuelUsage = []
 
