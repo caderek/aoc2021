@@ -40,8 +40,6 @@ const part2 = (rawInput: string) => {
   return Math.min(...fuelUsage)
 }
 
-// 92881128
-
 run({
   part1: {
     tests: [
