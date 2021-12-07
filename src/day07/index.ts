@@ -24,20 +24,20 @@ const part2 = (rawInput: string) => {
   const min = input[0]
   const max = input[input.length - 1]
 
-  const fuelUsage = []
+  let minFuelUsage = Infinity
 
   for (let i = min; i <= max; i++) {
-    fuelUsage.push(
-      input
-        .map((x) => {
-          const n = Math.abs(x - i)
-          return (n * (n + 1)) / 2
-        })
-        .reduce((a, b) => a + b),
-    )
+    const fuelUsage = input
+      .map((x) => {
+        const n = Math.abs(x - i)
+        return (n * (n + 1)) / 2
+      })
+      .reduce((a, b) => a + b)
+
+    minFuelUsage = fuelUsage < minFuelUsage ? fuelUsage : minFuelUsage
   }
 
-  return Math.min(...fuelUsage)
+  return minFuelUsage
 }
 
 run({
