@@ -43,14 +43,19 @@
     | Time: 29.169ms                  Points: 128        |
     | Benchmark: 0.607%               Level: *******---  |
     |                                                    |
+    | Day 08                                             |
+    | ------                                             |
+    | Time: 7.233ms                   Points: 512        |
+    | Benchmark: 0.151%               Level: *********-  |
+    |                                                    |
     |--- SUMMARY ----------------------------------------|
     |                                                    |
-    | Completed: 7 / 25                                  |
+    | Completed: 8 / 25                                  |
     |                                                    |
-    | Total time: 95.336ms                               |
-    | Benchmark (average): 0.284%                        |
+    | Total time: 102.569ms                              |
+    | Benchmark (average): 0.267%                        |
     |                                                    |
-    | Total score: 4096                                  |
+    | Total score: 4608                                  |
     | Level (average): *********-                        |
     |                                                    |
     +----------------------------------- git.io/JL9Qu ---+
