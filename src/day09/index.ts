@@ -7,9 +7,11 @@ const parseInput = (rawInput: string) =>
 const part1 = (rawInput: string) => {
   const input = parseInput(rawInput)
   let riskLevelSum = 0
+  const w = grid.width(input)
+  const h = grid.height(input)
 
-  for (let y = 0; y < grid.height(input); y++) {
-    for (let x = 0; x < grid.width(input); x++) {
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
       const item = input[y][x]
       const neighbors = grid.neighbors(x, y, input)
 
@@ -43,7 +45,7 @@ const part2 = (rawInput: string) => {
     }
   }
 
-  return graph.default.alg
+  return graph.alg
     .components(g)
     .map((x) => x.length)
     .sort((a, b) => b - a)

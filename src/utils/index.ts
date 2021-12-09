@@ -5,7 +5,7 @@ import { pipe, compose, rail, curry } from "@arrows/composition"
 import dispatch from "@arrows/dispatch"
 import * as math from "mathjs"
 import * as R from "ramda"
-import * as graph from "graphlib"
+import graph from "graphlib"
 import { isDeepStrictEqual } from "util"
 // @ts-ignore
 import * as gen from "generatorics"
