@@ -33,6 +33,15 @@ const neighbors = (x: number, y: number, grid: Grid) => {
   ].filter((n) => n !== undefined)
 }
 
+const neighborsWithCoords = (x: number, y: number, grid: Grid) => {
+  return [
+    grid[y - 1]?.[x] ? { val: grid[y - 1][x], x, y: y - 1 } : undefined,
+    grid[y][x + 1] ? { val: grid[y][x + 1], x: x + 1, y } : undefined,
+    grid[y + 1]?.[x] ? { val: grid[y + 1][x], x, y: y + 1 } : undefined,
+    grid[y][x - 1] ? { val: grid[y][x - 1], x: x - 1, y } : undefined,
+  ].filter((n) => n !== undefined) as { val: any; x: number; y: number }[]
+}
+
 const height = (grid: Grid) => grid.length
 const width = (grid: Grid) => grid[0].length
 
@@ -40,6 +49,7 @@ export default {
   create,
   from,
   neighbors,
+  neighborsWithCoords,
   neighborsWithDiagonals,
   width,
   height,
