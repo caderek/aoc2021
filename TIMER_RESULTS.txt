@@ -55,15 +55,15 @@
     |                                                    |
     | Day 10                                             |
     | ------                                             |
-    | Time: 3.181ms                   Points: 1024       |
-    | Benchmark: 0.066%               Level: **********  |
+    | Time: 2.812ms                   Points: 1024       |
+    | Benchmark: 0.059%               Level: **********  |
     |                                                    |
     |--- SUMMARY ----------------------------------------|
     |                                                    |
     | Completed: 10 / 25                                 |
     |                                                    |
-    | Total time: 339.357ms                              |
-    | Benchmark (average): 0.707%                        |
+    | Total time: 338.988ms                              |
+    | Benchmark (average): 0.706%                        |
     |                                                    |
     | Total score: 5664                                  |
     | Level (average): *********-                        |

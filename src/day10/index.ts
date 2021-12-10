@@ -31,9 +31,6 @@ const pairsReverse: { [key: string]: string } = {
   ">": "<",
 }
 
-const opening = Object.values(pairsReverse)
-const closing = Object.keys(pairsReverse)
-
 const part1 = (rawInput: string) => {
   const input = parseInput(rawInput)
 
@@ -43,7 +40,7 @@ const part1 = (rawInput: string) => {
     const stack = []
 
     for (const token of line) {
-      if (opening.includes(token)) {
+      if (pairs[token]) {
         stack.push(token)
       } else {
         if (stack[stack.length - 1] === pairsReverse[token]) {
@@ -69,7 +66,7 @@ const part2 = (rawInput: string) => {
     let corrupted = false
 
     for (const token of line) {
-      if (opening.includes(token)) {
+      if (pairs[token]) {
         stack.push(token)
       } else {
         if (stack[stack.length - 1] === pairsReverse[token]) {
