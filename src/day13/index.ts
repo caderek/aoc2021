@@ -28,7 +28,7 @@ const createGrid = (coords: Coords) => {
     grid[y][x] = "#"
   })
 
-  return grid
+  return grid as string[][]
 }
 
 const fold = (coords: Coords, folds: Folds) => {

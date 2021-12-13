@@ -17,7 +17,7 @@
     "@types/graphlib": "^2.1.8",
     "@types/node": "^16.11.6",
     "@types/ramda": "^0.27.57",
-    "aocrunner": "^1.6.0",
+    "aocrunner": "^1.6.1",
     "aoctimer": "^3.0.2",
     "gramma": "^1.6.0",
     "prettier": "^2.4.1"
