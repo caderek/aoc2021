@@ -60,17 +60,22 @@
     |                                                    |
     | Day 11                                             |
     | ------                                             |
-    | Time: 18.733ms                  Points: 256        |
-    | Benchmark: 0.39%                Level: ********--  |
+    | Time: 18.946ms                  Points: 256        |
+    | Benchmark: 0.395%               Level: ********--  |
+    |                                                    |
+    | Day 13                                             |
+    | ------                                             |
+    | Time: 149.279ms                 Points: 32         |
+    | Benchmark: 3.108%               Level: *****-----  |
     |                                                    |
     |--- SUMMARY ----------------------------------------|
     |                                                    |
-    | Completed: 11 / 25                                 |
+    | Completed: 12 / 25                                 |
     |                                                    |
-    | Total time: 357.721ms                              |
-    | Benchmark (average): 0.677%                        |
+    | Total time: 507.213ms                              |
+    | Benchmark (average): 0.880%                        |
     |                                                    |
-    | Total score: 5920                                  |
+    | Total score: 5952                                  |
     | Level (average): ********--                        |
     |                                                    |
     +----------------------------------- git.io/JL9Qu ---+

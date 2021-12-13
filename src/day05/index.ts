@@ -1,5 +1,5 @@
 import run from "aocrunner"
-import { Flat2 } from "../utils/flat.js"
+import { Flat2 } from "../utils/flatGrid.js"
 
 type Coords = [[number, number], [number, number]]
 
