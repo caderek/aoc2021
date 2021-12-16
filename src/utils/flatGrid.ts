@@ -1,3 +1,5 @@
+import { chunk_ } from "@arrows/array"
+
 const dirs2D = [
   [0, -1],
   [0, 1],
@@ -16,7 +18,7 @@ class Grid2D {
     this.#size = width * height
     this.#width = width
     this.#height = height
-    this.data = initialData ? initialData : new Array(width * height).fill(0)
+    this.data = initialData ? initialData : new Array(width * height)
   }
 
   get(x: number, y: number) {
@@ -43,6 +45,15 @@ class Grid2D {
 
   get size() {
     return this.#size
+  }
+
+  fill(val: any) {
+    this.data.fill(val)
+    return this
+  }
+
+  to2d() {
+    return chunk_(this.#width, this.data)
   }
 
   update(mappingFn: (v: any, x: number, y: number) => any) {
